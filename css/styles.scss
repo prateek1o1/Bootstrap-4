@@ -5,6 +5,7 @@ $background-pale: #D1C4E9;
 
 // Height variables
 $carousel-item-height: 300px;
+$modal-item-height: 300px;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
@@ -67,6 +68,25 @@ body{
         }
     }
 }
+.modal-content {
+    border: 0px;
+      
+    .model-content .modal-body {
+          background: $background-light;
+        }
+      
+        .modal-content .modal-header {
+          background: $background-dark;
+          color: floralwhite;
+          border: 0px;
+      
+          .close {
+            color: floralwhite;
+          }
+      
+        }
+      
+  }
 
 #carouselButton {
     right:0px;
